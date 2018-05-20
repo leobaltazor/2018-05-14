@@ -1,5 +1,5 @@
 body {
-	background-color: #999;
+  background-color: #999;
 }
 .player1::after {
   content: "+";
@@ -13,11 +13,11 @@ body {
 
 .player2::after {
   content: "o";
-	font-size: 25px;
-	position: absolute;
-	display: block;
-	top: 20%;
-	left: 35%;
+  font-size: 25px;
+  position: absolute;
+  display: block;
+  top: 20%;
+  left: 35%;
 }
 
 td {
@@ -27,11 +27,11 @@ td {
   position: relative;
 }
 .wrapper {
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%)
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 .player {
-	font-size: 1.5em;
-	color: royalblue;
+  font-size: 1.5em;
+  color: royalblue;
 }

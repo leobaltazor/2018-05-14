@@ -106,18 +106,17 @@ function whoWin() {
   gameOwer(str);
 }
 function gameOwer(str) {
-	setTimeout(() => {
-		
-		if (str === "XXX") {
-			stat(1, 0);
-			confirmm(str[0]);
-			_whoseTurn.innerHTML = "Победил игрок X";
-		} else if (str === "OOO") {
-			confirmm(str[0]);
-			stat(0, 1);
-			_whoseTurn.innerHTML = "Победил игрок О";
-		}
-	}, 100);
+  setTimeout(() => {
+    if (str === "XXX") {
+      stat(1, 0);
+      confirmm(str[0]);
+      _whoseTurn.innerHTML = "Победил игрок X";
+    } else if (str === "OOO") {
+      confirmm(str[0]);
+      stat(0, 1);
+      _whoseTurn.innerHTML = "Победил игрок О";
+    }
+  }, 100);
 }
 function confirmm(data) {
   if (confirm(`Победил ${data}.\nИграем еще?`)) {
